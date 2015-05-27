@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Super Hero Movies" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
@@ -14,7 +14,7 @@
   <body>
 
      <%= render "layouts/header" %>
-     
+     <h1><%= yield(:title) %></h1>
 
     <%= yield %>
     <%= javascript_include_tag "application" %>
